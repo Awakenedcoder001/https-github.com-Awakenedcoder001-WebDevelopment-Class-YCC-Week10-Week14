@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML FILE</title>
+</head>
+<body>
+	<h1> Database has been completed</h1>
+	{% if records %}
+	<table border = "3px solid">
+		<caption>MY trial table for update/delete and insertion.</caption>
+		<thead>
+			<tr>
+				<th>USN</th>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>GENDER</th>
+				<th>LOCATION</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for i in records %}
+			<td> {{i.usn|upper}} </td>
+			<td> {{i.name|upper}} </td>
+			<td> {{i.age|upper}} </td>
+			<td> {{i.gender|upper}} </td>
+			<td> {{i.location|upper}} </td>
+			<tr>
+				{% endfor %}
+				<td>data</td>
+			</tr>
+		</tbody>
+	</table>
+	{% endif %}
+	
+</body>
+</html>

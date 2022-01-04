@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Displaying the data</title>
+</head>
+<body>
+	<h1>DATABASES INFORMATION </h1>
+	{%if  data %}<center>
+		<table border = "2px solid" cellpadding="0px">
+	<table>
+		<caption>Showing data</caption>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>USN</th>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>GENDER</th>
+				<th>COURSE</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			{% for student in data%}
+			<tr>
+				<td>{{ student.sid|upper }}</td>
+				<td>{{  student.usn|upper }}</td>
+				<td>{{  student.susn|upper }}</td>
+				<td>{{  student.sname|upper}}</td>
+				<td>{{  student.sage|upper}}</td>
+				<td>{{  student.scourse|upper}}</td>
+			{% endfor %}
+
+			</tr>
+		</tbody>
+	</table>
+</center>
+	{% endif %}
+	
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CUSTOM FORMS</title>
+</head>
+<body>
+    <center>
+    <form method="POST">
+        {% csrf_token %}
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="fname">FIRSTNAME</label>
+                    </td>
+                    <td align="center">
+                        <strong>
+                            <big>:</big>
+                        </strong>
+                    </td>
+                    <td>
+                        <input type="text" id="fname" name="fname" placeholder="Ajay" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="lname">
+                           LASTNAME 
+                        </label> 
+                    </td>
+                    <td align="center">
+                        <strong>
+                            <big>:</big>
+                        </strong>
+                    </td>
+                    <td>
+                        <input type="text" id="lname" name="lname" placeholder="K.V">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       <label for="email">
+                            EMAIL ID 
+                        </label>
+                    </td>
+                    <td align="center">
+                        <strong>
+                            <big>:</big>
+                        </strong>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>                 
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <label for="city">
+                            CITY 
+                        </label>
+                    </td>
+                    <td align="center">
+                        <strong>
+                            <big>:</big>
+                        </strong>
+                    </td>
+                    <td>
+                        <input type="text" id="city" name="city" placeholder="yourcityname" required>    
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+            
+            <textarea name="address" rows="10" cols="10">
+            </textarea> <br><br>
+                
+            <select name="state">
+                <option value="Paro">Paro</option>
+                <option value="Thimphu">Thimphu</option>
+                <option value="Punakha">Punakha</option>
+                <option value="Ha">Ha</option>
+            </select>
+
+            <input type="submit" name="submit">
+
+        </form>
+        <br><br>
+    </center>
+</body>
+</html>

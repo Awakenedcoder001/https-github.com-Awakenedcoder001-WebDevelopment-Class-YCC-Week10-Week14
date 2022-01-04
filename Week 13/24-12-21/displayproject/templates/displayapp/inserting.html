@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>INSERT OPERATIONS </title>
+</head>
+<body>
+	{% if data %}
+	<h1>{{msg1}} </h1>
+	<h1> The data is stored sucessfully</h1>
+
+	<table border="2px solid">
+
+		<caption>Table of failures</caption>
+		<thead>
+			<tr>
+				<th>USN</th>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>Gender</th>
+				<th>Course</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for emp in data %}
+			<tr>
+				<td>{{emp.usn|upper}}</td>
+				<td>{{emp.name|upper}}</td>
+				<td>{{emp.age|upper}}</td>
+				<td>{{emp.gender|upper}}</td>
+				<td>{{emp.course|upper}}</td>
+			</tr>
+			{% endfor %}
+
+		</tbody>
+	</table>
+	{% endif%}
+</body>
+</html>

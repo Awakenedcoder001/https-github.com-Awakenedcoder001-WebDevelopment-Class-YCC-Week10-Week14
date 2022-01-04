@@ -1,0 +1,11 @@
+Session information would be stored in django_sessions
+
+#Get the session information
+request.sessions.get('count',0)
+
+#Update the count
+new_count = count +1
+request.session.get('count')= new_count
+
+#Create Expirt Date
+get_expiry_date()

@@ -1,0 +1,27 @@
+#Settings.py file
+
+1.import os
+
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+TEMPLATES_DIRS=os.path.join(BASE_DIR,'templates')
+STATIC_DIRS=os.path.join(BASE_DIR,'static')
+
+
+2.INSTALLED_APPS = [
+    'eleventhapp'
+]
+
+3.TEMPLATES = [
+    {
+'DIRS': [TEMPLATES_DIRS,],
+   },
+]
+
+4.# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/4.0/howto/static-files/
+
+STATIC_URL = 'static/'
+
+STATICFILES_DIRS=[STATIC_DIRS,]

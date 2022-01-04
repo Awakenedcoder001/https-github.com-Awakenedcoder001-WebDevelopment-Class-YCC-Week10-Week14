@@ -1,0 +1,24 @@
+class Person: 
+ def __init__(self): #2 
+  self.name=input("ENTER THE NAME :")#3 
+  #Creating an object of inner class from outer class 
+  #self.dob consits of the object address of DateOfBirthClass 
+  self.dob=self.DateOfBirth()#4 #10 
+ 
+ def display(self): #13 
+  print(f"NAME OF THE PERSON IS  : {self.name}") #14 
+  #Calling the inner class method from outer class method 
+  self.dob.display() #15 #18 
+  
+ class DateOfBirth: 
+  def __init__(self):#5 
+   print("INSIDE DATEOFBIRTH CLASS CONSTRUCTOR")#6 
+   self.date=int(input("ENTER THE DATE : "))#7 
+   self.month=int(input("ENTER THE MONTH NUMBER :"))#8 
+   self.year=int(input("ENTER THE YEAR OF BIRTH"))#9 
+ 
+  def display(self): #16 
+   print(f"DATE OF BIRTH IS : {self.date}:{self.month}:{self.year}")#17 
+ 
+ref=Person() #1 #11 
+ref.display() #12 #19

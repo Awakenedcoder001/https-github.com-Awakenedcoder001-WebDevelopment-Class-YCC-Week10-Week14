@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>INSERT OPERATION</title>
+</head>
+<body>
+ <h1>DATA IS STORED SUCCESSFULLY</h1>
+
+ {% if  data %}
+  
+  <table border="2px solid">
+   <caption>STUDENTS DETAILS : </caption>
+   <thead>
+    <tr>
+     <th>USN</th>
+     <th>NAME</th>
+     <th>AGE</th>
+     <th>GENDER</th>
+     <th>COURSE</th>
+    </tr>
+   </thead>
+   <tbody>
+    {% for  emp in data %}
+     <tr>
+      <td>{{ emp.usn | upper  }}</td>
+      <td>{{ emp.name | upper  }}</td>
+      <td>{{ emp.age | upper }}</td>
+      <td>{{ emp.gender | upper }}</td>
+      <td>{{ emp.course | upper  }}</td>
+     </tr>
+    {% endfor %}
+   </tbody>
+  </table>
+ {% endif %}
+</body>
+</html>

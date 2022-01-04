@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Display docs</title>
+	<!-- {#linking the static files} -->
+	<link rel="stylesheet" type="text/css" href="{%static 'CSS/first.css' %}">
+</head>
+<body>
+	<h1> hello ! {{ name }}, {{ msg }}  </h1>
+	<!-- linking image file present in the static folder -->
+	<center><img src ="{% static 'images/earthshaker_arcana_header.jpg'%}"alt="earthshakerarcana"></center>
+	<h1> the current date and time are : {{date}} </h1>
+
+</body>
+<!-- <script src="{% static 'images/dsp.jpg' %}" alt="No image found>-->
+</html>

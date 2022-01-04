@@ -1,0 +1,94 @@
+E:.
+│   db.sqlite3
+│   manage.py
+│
+├───jobapp
+│   │   admin.py
+│   │   apps.py
+│   │   models.py
+│   │   tests.py
+│   │   views.py
+│   │   __init__.py
+│   │
+│   ├───migrations
+│   │   │   __init__.py
+│   │   │
+│   │   └───__pycache__
+│   │           __init__.cpython-310.pyc
+│   │
+│   └───__pycache__
+│           admin.cpython-310.pyc
+│           apps.cpython-310.pyc
+│           models.cpython-310.pyc
+│           views.cpython-310.pyc
+│           __init__.cpython-310.pyc
+│
+├───sportapp
+│   │   admin.py
+│   │   apps.py
+│   │   models.py
+│   │   tests.py
+│   │   views.py
+│   │   __init__.py
+│   │
+│   ├───migrations
+│   │   │   __init__.py
+│   │   │
+│   │   └───__pycache__
+│   │           __init__.cpython-310.pyc
+│   │
+│   └───__pycache__
+│           admin.cpython-310.pyc
+│           apps.cpython-310.pyc
+│           models.cpython-310.pyc
+│           views.cpython-310.pyc
+│           __init__.cpython-310.pyc
+│
+├───templates
+│   ├───jobapp
+│   │       google.html
+│   │       microsoft.html
+│   │       tesla.html
+│   │
+│   ├───sportapp
+│   │       basketball.html
+│   │       football.html
+│   │       volleyball.html
+│   │
+│   └───touristapp
+│           bumthang.html
+│           paro.html
+│
+├───touristapp
+│   │   admin.py
+│   │   apps.py
+│   │   models.py
+│   │   tests.py
+│   │   views.py
+│   │   __init__.py
+│   │
+│   ├───migrations
+│   │   │   __init__.py
+│   │   │
+│   │   └───__pycache__
+│   │           __init__.cpython-310.pyc
+│   │
+│   └───__pycache__
+│           admin.cpython-310.pyc
+│           apps.cpython-310.pyc
+│           models.cpython-310.pyc
+│           views.cpython-310.pyc
+│           __init__.cpython-310.pyc
+│
+└───twelvethproject
+    │   asgi.py
+    │   settings.py
+    │   urls.py
+    │   wsgi.py
+    │   __init__.py
+    │
+    └───__pycache__
+            settings.cpython-310.pyc
+            urls.cpython-310.pyc
+            wsgi.cpython-310.pyc
+            __init__.cpython-310.pyc

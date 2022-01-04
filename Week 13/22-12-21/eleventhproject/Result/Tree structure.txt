@@ -1,0 +1,48 @@
+E:.
+│   db.sqlite3
+│   manage.py
+│
+├───eleventhapp
+│   │   admin.py
+│   │   apps.py
+│   │   models.py
+│   │   tests.py
+│   │   views.py
+│   │   __init__.py
+│   │
+│   ├───migrations
+│   │   │   __init__.py
+│   │   │
+│   │   └───__pycache__
+│   │           __init__.cpython-310.pyc
+│   │
+│   └───__pycache__
+│           admin.cpython-310.pyc
+│           apps.cpython-310.pyc
+│           models.cpython-310.pyc
+│           views.cpython-310.pyc
+│           __init__.cpython-310.pyc
+│
+├───eleventhproject
+│   │   asgi.py
+│   │   settings.py
+│   │   urls.py
+│   │   wsgi.py
+│   │   __init__.py
+│   │
+│   └───__pycache__
+│           settings.cpython-310.pyc
+│           urls.cpython-310.pyc
+│           wsgi.cpython-310.pyc
+│           __init__.cpython-310.pyc
+│
+├───static
+│   ├───css
+│   │       first.css
+│   │
+│   └───images
+│           dsp.jpg
+│
+└───templates
+    └───eleventhapp
+            display.html
